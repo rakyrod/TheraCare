@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css folder/book.css">
+    <title>BOOKING</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Patient Registration Form</h2>
+        <form action="book.html" method="post">
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>First Name:</label>
+                    <input type="text" name="firstname" placeholder="Enter First Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Last Name:</label>
+                    <input type="text" name="lastname" placeholder="Enter Last Name" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Middle Name/Initial:</label>
+                    <input type="text" name="middlename" placeholder="Enter Middle Name" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Birthdate:</label>
+                    <input type="date" name="birthdate" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Age:</label>
+                    <input type="number" min="2" name="age" placeholder="Enter Age" required>
+                </div>
+
+                <div class="radio-group">
+                    <label>Select Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male"> Male</label><br>
+                
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female"> Female</label><br>
+                
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other"> Other</label><br>
+                
+                <button type="submit" class="submit-btn">Register Patient</button>
+
+        </form>
+    </div>
+
+    
+</body>
+</html>

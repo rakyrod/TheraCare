@@ -1,0 +1,190 @@
+body { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner-container { 
+    text-align: center;
+    font-family: 'Georgia', serif;
+
+}
+.banner-container h1 { 
+    color: rgb(33, 33, 33);
+    font-size: 24px;
+    font-weight: 400;
+    position: fixed;
+    top: 69px;
+    width: 100%;
+    background-color: gainsboro;
+    padding: 20px 10px;
+    text-align: center;
+    font-family: 'DM Serif Text', serif;
+}
+.nav-container {
+    background-color: #f8f8f8;
+    padding: 10px 40px;
+    display: flex;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 20%;
+    
+}
+.nav-icon i { 
+    color: #E74C3C;
+    font-size: 28px;
+    position: relative;
+    top: 20px;
+    left: 18rem;
+
+}
+
+.name-logo { 
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+    left:20%;
+  
+}
+
+.nav > li {
+    position: relative;
+}
+.nav a { 
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-family: "DM Serif Text", serif;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+    padding:10px 15px;
+}
+ul ul {
+    position: absolute;
+    top: 100%;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    display: none;
+    min-width: 200px;
+    border-radius: 5px; 
+    padding: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    z-index: 8;
+    left:0;
+
+}
+
+ul ul li {
+    display: block;
+}
+ul ul li a{ 
+    padding: 10px 15px;
+    color: black;
+    display: block;
+}
+ul li:hover > ul {
+    display: block;
+}
+
+ul li a:hover { 
+    background: rgba(255, 255, 255, 0.3); 
+}
+.button { 
+    padding: 10px;
+    position: fixed;
+    border-radius: 10px;
+    background-color: #A52A2A;
+    color: white;
+}
+.button:hover { 
+    background-color: #c24343
+
+}
+.section-1 { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 300px 100px; 
+    text-align: center; 
+}
+
+.image-acl { 
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.ACL { 
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.paragraph { 
+    width: 90%; 
+    padding-left: 70px;
+    padding-top: 46px;
+
+}
+
+.paragraph p {
+    font-family: "Signika Negative", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 30px;
+}
+.submit {
+    padding: 10px; 
+    color: white;
+    background-color: #A52A2A;
+    position: relative;
+    left: 35px;
+}
+.ACL-black { 
+    font-weight: bold;
+    color: black;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    background-color: #A52A2A; 
+    color: white;
+    padding: 20px;
+}
+
+.navibar-container, .offer-container, .info-container {
+    flex: 1; 
+    text-align: center;
+}
+
+.navibar-container ul,
+.offer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navibar-container li, 
+.offer-container li {
+    margin: 5px 0;
+}
+
+.navibar-container a, 
+.offer-container a {
+    color: white;
+    text-decoration: none;
+}
